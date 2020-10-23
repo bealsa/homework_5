@@ -86,9 +86,9 @@ footer{
     /*Your code here.*/
     /*Don't forget to vertically and horizontally alight the card*/
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
 }
 
@@ -103,7 +103,7 @@ footer{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-basis: auto;
+  flex-basis: | auto;
 
 }
 
@@ -153,8 +153,7 @@ footer{
   min-height: 600px;
   /*Your code here again.*/
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -171,7 +170,7 @@ header{
   /*Your  code here again.*/
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   flex-basis: auto;
 }
 
@@ -179,8 +178,6 @@ header{
   /*Your code here again.*/
   display: flex;
   flex-direction: column;
-  align-items: center;
-  flex-basis: auto;
 }
 
 .nav_item a{
@@ -200,6 +197,10 @@ header{
   /* Cards! */
   .card {
     /*Your  code here again.*/
+    width: 225px;
+    flex-basis: auto;
+
+
   }
 
   .card_big{
@@ -210,10 +211,17 @@ header{
   /* Navbar */
   header{
     /*Your code here again.*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .nav_links{
     /*Your code here again.*/
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
   }
 
   .nav_item a{
